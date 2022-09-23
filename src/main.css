@@ -1,0 +1,522 @@
+body {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 10;
+  background-color: whitesmoke;
+  font-family: "Karla", sans-serif;
+}
+
+header span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+#menu {
+  height: 130vh;
+  background: url("./images/bg-pattern-mobile-nav.svg") #2b272f no-repeat bottom;
+  padding: 1rem 0rem;
+  text-align: center;
+  display: none;
+  margin-bottom: 0;
+}
+
+#menu li {
+  list-style-type: none;
+  display: block;
+  height: 50px;
+  width: 100%;
+}
+
+#menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700px;
+  color: white;
+}
+
+#menu button {
+  background-color: inherit;
+  background-color: inherit;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  height: 3rem;
+  width: 90%;
+}
+
+#shield {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #2d2640;
+  text-align: center;
+}
+
+#shield span {
+  padding: 4rem 1.5rem;
+  background: url("./images/bg-pattern-intro-left-desktop.svg") no-repeat top -300px
+      left -10px,
+    url("./images/bg-pattern-intro-right-desktop.svg") no-repeat bottom -400px right -300px;
+}
+
+#shield hr {
+  display: none;
+}
+
+#shield h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: white;
+}
+
+#shield button {
+  background-color: inherit;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  height: 3rem;
+  width: 50%;
+}
+
+#shield button:hover {
+  background-color: white;
+  color: #2d2640;
+}
+
+#shield p {
+  color: white;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+#shield .background {
+  display: none;
+}
+
+#firstSection {
+  margin-top: 100px;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  padding: 0rem 1.5rem;
+}
+
+#firstSection hr {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#firstSection h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: black;
+  text-align: center;
+}
+
+#firstSection span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#firstSection span div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #837d87;
+  font-family: "Karla", sans-serif;
+}
+
+#firstSection span div img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+#firstSection span div h3 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 5px;
+}
+
+#firstSection section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background: #2d2640 url("./images/bg-pattern-how-we-work-mobile.svg")
+    no-repeat top right;
+}
+
+#firstSection section h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: white;
+}
+
+#firstSection section button {
+  background-color: inherit;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  height: 3rem;
+  width: 50%;
+}
+
+#firstSection section button:hover {
+  background-color: white;
+  color: #2d2640;
+}
+
+footer {
+  text-align: center;
+  margin-top: 6rem;
+  background: #fafafa url("./images/bg-pattern-footer-mobile.svg") no-repeat top;
+  padding: 6rem 0rem;
+  font-family: "Karla", sans-serif;
+}
+
+footer hr {
+  color: #837d87;
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer .firstSpan {
+  padding-bottom: 2rem;
+}
+
+footer .firstSpan span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0rem 7rem;
+  margin-top: 20px;
+}
+
+footer .firstSpan span svg {
+  width: 24px;
+  height: 24px;
+  fill: #837d87;
+}
+
+footer .firstSpan span svg:hover {
+  fill: black;
+}
+
+.secondSpan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.secondSpan span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.secondSpan span h5 {
+  color: #837d87;
+}
+
+.secondSpan span a {
+  text-decoration: none;
+  color: #2d2640;
+  margin-top: 15px;
+}
+
+.secondSpan span a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 767px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0rem 6rem;
+  }
+  header span {
+    padding: 2rem 0rem;
+  }
+  header span img {
+    height: 1rem;
+  }
+  #menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0rem;
+    background: none;
+    width: 100vh;
+    vertical-align: middle;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  #menu li {
+    width: auto;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #menu li a {
+    color: #837d87;
+    display: block;
+    padding-top: 1rem;
+    height: 3rem;
+    font-weight: 400;
+  }
+  #menu li a:hover {
+    color: #2b272f;
+  }
+  #menu button {
+    border: 2px solid black;
+    height: 3rem;
+    width: 10rem;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 400;
+  }
+  #menu button:hover {
+    background-color: #2b272f;
+    color: white;
+  }
+  #hamburger {
+    display: none;
+  }
+  #firstSection {
+    padding: 0rem 10rem;
+    -ms-flex-line-pack: left;
+    align-content: left;
+    text-align: left;
+    margin-top: 16rem;
+  }
+  #firstSection hr {
+    width: 10%;
+    margin-left: 0;
+  }
+  #firstSection h1 {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  #firstSection span {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-bottom: 80px;
+  }
+  #firstSection span div {
+    text-align: left;
+  }
+  #firstSection span div img {
+    margin-left: 0px;
+  }
+  #firstSection section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0rem 3rem;
+    height: auto;
+    background: #2d2640 url("./images/bg-pattern-how-we-work-desktop.svg")
+      no-repeat right;
+  }
+  #firstSection section h1 {
+    width: 320px;
+    text-align: left;
+  }
+  #firstSection section button {
+    width: 200px;
+  }
+  .secondSpan {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .firstSpan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .firstSpan > img {
+    height: 20px;
+    margin-top: 15px;
+  }
+  .firstSpan span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 130px;
+    padding: 0;
+  }
+  #shield {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    position: relative;
+    height: 70vh;
+    padding: 2.5rem 6rem;
+    z-index: 2;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #shield img {
+    position: absolute;
+    top: 5.5rem;
+    right: 6rem;
+    height: 100vh;
+    z-index: 0;
+  }
+  #shield hr {
+    display: inline-block;
+    width: 5.5rem;
+  }
+  #shield span {
+    width: 50%;
+    text-align: left;
+    background-image: none;
+  }
+  #shield span h1 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+    width: 400px;
+  }
+  #shield span p {
+    width: 480px;
+    margin-top: 0;
+  }
+  #shield span button {
+    width: 150px;
+  }
+  #shield .background {
+    display: inline-block;
+  }
+  #shield .intro-left {
+    position: absolute;
+    left: 0rem;
+    top: 20rem;
+    width: 10rem;
+    height: 30rem;
+  }
+  #shield .intro-right {
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+    z-index: 1;
+    width: 20rem;
+    height: 30rem;
+  }
+  footer {
+    padding: 2rem 6rem;
+    background: #fafafa url("./images/bg-pattern-footer-desktop.svg") no-repeat
+      top left;
+    font-size: 0.8rem;
+  }
+  footer hr {
+    width: 100%;
+  }
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */

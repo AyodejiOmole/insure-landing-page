@@ -1,0 +1,418 @@
+$Very-Dark-Violet: hsl(270, 9%, 17%);
+$Dark-Grayish-Violet: hsl(273, 4%, 51%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+$Dark-Violet: hsl(256, 26%, 20%);
+$Grayish-Blue: hsl(216, 30%, 68%);
+$serif: 'DM Serif Display', serif;
+$karla: 'Karla', sans-serif;
+
+@mixin buttons {
+    background-color: inherit;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    height: 3rem;
+}
+
+@mixin heads($color, $size) {
+    font-family: $serif;
+    font-weight: 400;
+    font-size: $size;
+    color: $color;
+}
+
+body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    background-color: whitesmoke;
+    font-family: $karla;
+    span {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+    }
+}
+
+#menu {
+    background: url('images/bg-pattern-mobile-nav.svg') $Very-Dark-Violet no-repeat bottom;
+    padding: 1rem 0rem;
+    text-align: center;
+    display: none;
+    margin-bottom: 0;
+    li {
+        list-style-type: none;
+        display: block;
+        height: 50px;
+        width: 100%;
+    }
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700px;
+        color: white;
+    }
+    button {
+        background-color: inherit;
+        @include buttons;
+        width: 90%;
+    }
+}
+
+#shield {
+    display: flex;
+    flex-direction: column;
+    background-color: $Dark-Violet;
+    text-align: center;
+    span {
+        padding: 4rem 1.5rem;
+        background: url('images/bg-pattern-intro-left-desktop.svg') no-repeat top -300px left -10px, url('images/bg-pattern-intro-right-desktop.svg') no-repeat bottom -400px right -300px;
+        
+    }
+    hr {
+        display: none;
+    }
+    h1 {
+        @include heads(white, 2.5rem);
+    }
+    button {
+        @include buttons;
+        width: 50%;
+        &:hover {
+            background-color: white;
+            color: $Dark-Violet;
+        }
+    }
+    p {
+        color: white;
+        font-family: $karla;
+        font-weight: 400;
+    }
+    .background {
+        display: none;
+    }
+}
+
+#firstSection {
+    margin-top: 100px;
+    align-content: center;
+    padding: 0rem 1.5rem;
+    hr {
+        width: 50%; 
+        margin: 0 auto;
+    }
+    h1 {
+        @include heads(black, 3rem);
+        text-align: center;
+    }
+    span {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        div {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 30px;
+            color: $Dark-Grayish-Violet;
+            font-family: $karla;
+            img {
+                width: 80px;
+                height: 80px;
+                margin: 0 auto;
+            }
+            h3 {
+                @include heads(black, 2rem); 
+                margin-bottom: 5px;
+            }
+        }
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+        background: $Dark-Violet url('images/bg-pattern-how-we-work-mobile.svg') no-repeat top right;
+        h1 {@include heads(white, 2.5rem);};
+        button {
+            @include buttons;
+            width: 50%;
+            &:hover {
+                background-color: white;
+                color: $Dark-Violet;
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 6rem;
+    background: $Very-Light-Gray url('images/bg-pattern-footer-mobile.svg') no-repeat top;
+    padding: 6rem 0rem;
+    font-family: $karla;
+    hr {
+        color: $Dark-Grayish-Violet;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .firstSpan {
+        padding-bottom: 2rem;
+        span {
+            display: flex;
+            justify-content: space-between;
+            padding: 0rem 7rem;
+            margin-top: 20px;
+            svg {
+                width: 24px;
+                height: 24px;
+                fill: hsl(273, 4%, 51%);
+                &:hover {
+                    fill: black;
+                }
+                // margin-right: 10px;
+            }
+        }
+    }
+}
+
+.secondSpan {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    span {
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        h5 {
+            color: $Dark-Grayish-Violet;
+        }
+        a {
+            text-decoration: none;
+            color: $Dark-Violet;
+            margin-top: 15px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    } 
+}
+
+// #floating-action-button {
+//     position: absolute;
+//     bottom: 10px;
+//     right:  10px;
+//     height: 200px;
+//     background-color: blue;
+//     width: 200px;
+//     border-radius: 50%;
+// }
+
+@media (min-width: 767px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0rem 6rem;
+        span {
+            padding: 2rem 0rem;
+            img {
+                height: 1rem;
+            }
+        }
+    }
+
+    #floating-action-button {
+        position: absolute;
+        bottom: 10px;
+        right:  10px;
+        height: 200px;
+        top: 400px;
+        background-color: blue;
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    #menu {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        padding: 0rem;
+        background: none;
+        width: 100vh;
+        // border: 2px solid red;
+        vertical-align: middle;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        li {
+            width: auto;
+            margin: 0 auto;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            a {
+                color: $Dark-Grayish-Violet;
+                display: block;
+                padding-top: 1rem;
+                height: 3rem;
+                font-weight: 400;
+                &:hover {
+                    color: $Very-Dark-Violet;
+                }
+            }
+        }
+        button {
+            border: 2px solid black;
+            height: 3rem;
+            width: 10rem;
+            color: black;
+            padding: 1rem;
+            text-align: center;
+            font-weight: 400;
+            &:hover {
+                background-color: $Very-Dark-Violet;
+                color: white;
+            }
+        }
+    }
+    #hamburger {
+        display: none;
+    }
+    #firstSection {
+        padding: 0rem 10rem;
+        align-content: left;
+        text-align: left;
+        margin-top: 16rem;
+        hr  {
+            width: 10%;
+            margin-left: 0;
+        }
+        h1 {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+        span {
+            flex-direction: row;
+            margin-bottom: 80px;
+            div {
+                text-align: left;
+                img {
+                    margin-left: 0px;
+                }
+            } 
+        }
+        section {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0rem 3rem;
+            height: auto;
+            background: $Dark-Violet url('images/bg-pattern-how-we-work-desktop.svg') no-repeat right;
+            h1 {
+                width: 320px;
+                text-align: left;
+            }
+            button {
+                width: 200px;
+            }
+        }
+    }
+    
+    .secondSpan {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .firstSpan {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        & > img {
+            height: 20px;
+            margin-top: 15px;
+        }
+        span {
+            display: flex;
+            justify-content: space-between;
+            width: 130px;
+            padding: 0;
+        }
+    }
+    #shield {
+        flex-direction: row;
+        position: relative;
+        height: 70vh;
+        padding: 2.5rem 6rem;
+        z-index: 2;
+        justify-content: space-between;
+        img {
+            position: absolute;
+            top: 5.5rem;
+            right: 6rem;
+            height: 100vh;
+            z-index: 0;
+        }
+        hr {
+            display: inline-block;
+            width: 5.5rem;
+        }
+        span {
+            width: 50%;
+            text-align: left;
+            background-image: none;
+            h1 {
+                @include heads(white, 3.5rem);
+                font-weight: 700;
+                margin-bottom: 10px;
+                width: 400px;
+            }
+            p {
+                width: 480px;
+                margin-top: 0;
+            }
+            button {
+                width: 150px;
+            }
+        }
+        .background {
+            display: inline-block;
+        }
+        .intro-left {
+            position: absolute;
+            left: 0rem;
+            top: 20rem;
+            width: 10rem;
+            height: 30rem;
+        }
+        .intro-right {
+            position: absolute;
+            right: 0rem;
+            top: 0rem;
+            z-index: 1;
+            width: 20rem;
+            height: 30rem;
+        }
+    } 
+
+    footer {
+        padding: 2rem 6rem;
+        background: $Very-Light-Gray url('images/bg-pattern-footer-desktop.svg') no-repeat top left;
+        font-size: 0.8rem;
+        hr {
+            width: 100%;
+        }
+    }
+}
+
+.attribution { 
+    font-size: 1rem; 
+    text-align: center;
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
